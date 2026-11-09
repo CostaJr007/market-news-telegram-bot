@@ -1,0 +1,10 @@
+services:
+  market-news-bot:
+    build: .
+    container_name: market-news-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./state.json:/app/state.json
+      - ./bot.log:/app/bot.log

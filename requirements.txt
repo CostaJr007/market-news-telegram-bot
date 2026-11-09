@@ -1,0 +1,7 @@
+# O bot NAO precisa de bibliotecas externas: usa apenas a biblioteca padrao
+# do Python (urllib, xml.etree, json, zoneinfo...). Basta Python 3.10+.
+#
+# Unica dependencia OPCIONAL (recomendada no Windows): o banco de fusos IANA,
+# necessario para TIMEZONE=America/Sao_Paulo ser lido corretamente.
+# Sem ele o bot cai no fallback interno de offset (UTC-3) e segue funcionando.
+tzdata>=2024.1; platform_system == "Windows"

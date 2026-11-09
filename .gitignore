@@ -1,0 +1,34 @@
+# Ambiente e Credenciais (NUNCA comitar credenciais)
+.env
+.env.*
+!.env.example
+
+# Arquivos de Estado e Execução
+state.json
+state.json.*
+*.tmp
+
+# Logs
+bot.log
+bot.log.*
+*.log
+
+# Caches locais
+.cache/
+__pycache__/
+*.py[cod]
+*$py.class
+.ruff_cache/
+.pytest_cache/
+
+# Ambientes Virtuais
+venv/
+.venv/
+env/
+ENV/
+
+# Configurações de IDE e SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
